@@ -1,5 +1,4 @@
-
-# Sophie Fader, sosele, P.E. #17 
+# Sophie Fader, sosele, P.E. #17 counting  the letters in numbers (1, 1000)
 
 ones = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 teens = ["ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
