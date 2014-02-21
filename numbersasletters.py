@@ -36,22 +36,23 @@ for i in range (0,len(tens)):
 
 #count hundreds place up to 20 eg. (101, 102, 102,... 201,202,203,....)
 for i in range (0,len(hundreds)):
+  hundredsSum=  hundredsSum + len(hundreds[i])
   for j in range (0,len(ones)):
       hundredsSum = hundredsSum + len(hundreds[i]) + len("and") + len(ones[j])
-    #  print hundreds[i] + "and" + ones[j]
+      print hundreds[i] + "and" + ones[j]
 for i in range (0,len(hundreds)):
   for j in range (0,len(teens)):
       hundredsSum = hundredsSum + len(hundreds[i]) + len("and") + len(teens[j])
-    #  print hundreds[i] + "and" + teens[j]
+      print hundreds[i] + "and" + teens[j]
 
 #count hundreds place from 20 - 99 eg. (121, 122.....221,222....)
 for i in range (0,len(hundreds)):
   for j in range(0, len(tens)):
     hundredsSum = hundredsSum + len(hundreds[i]) + len("and") + len(tens[j])
-    #print str(hundreds[i]) + "and" +  str(tens[j])
+    print str(hundreds[i]) + "and" +  str(tens[j])
     for k in range(0,len(ones)):
        hundredsSum = hundredsSum + len(hundreds[i]) + len("and") + len(tens[j]) +len(ones[k])
-     #  print str(hundreds[i]) + "and" + str(tens[j]) + str(ones[k])
+       print str(hundreds[i]) + "and" + str(tens[j]) + str(ones[k])
 
 #count thousands place
 for i in range (0,len(thousands)):
