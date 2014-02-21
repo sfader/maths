@@ -6,8 +6,27 @@ tens = ["twenty", "thirty", "fourty", "fifty", "sixty", "seventy", "eighty", "ni
 hundreds = ["onehundred", "twohundred", "threehundred", "fourhundred", "fivehundred", "sixhundred", "sevenhundred", "eighthundred", "ninehundred"]
 thousands = ["onethousand"]
 ands = "and"
-lSum = 0.0
+onesSum = 0.0
+teensSum = 0.0
+tensSum = 0.0
+hundredsSum = 0.0
+thousandsSum = 0.0
 
-for i in range (0,9):
-  lSum = lSum +len(ones[0])
-  print lSum
+  
+#count ones place
+for i in range (0,len(ones)):
+  onesSum = onesSum +len(ones[i])
+print onesSum
+
+#count teens
+for j in range (0,len(teens)):
+  teensSum = teensSum + len(teens[i])
+print teensSum
+
+#count tens place
+
+for k in range (0,len(tens)):
+  for l in range (0, len(ones)):
+    tensSum = tensSum + len(tens[k]) + len(ones[l])
+print tensSum
+
