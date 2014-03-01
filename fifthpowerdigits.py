@@ -8,11 +8,18 @@
 
 succ = []
 curr =0
+total = 0
 
-for i in range (10000, 10500):
+for i in range (10000, 99999):
   curr = str(i)
   digsum = pow(int(curr[0]),5) + pow(int(curr[1]),5) + pow(int(curr[2]),5) + pow(int(curr[3]),5) + pow(int(curr[4]),5)
   #print i, digsum
   if i==digsum:
     succ.append(digsum)
-print succ
+
+print succ 
+
+for j in range (0, len(succ)):
+  total = total + succ[j]
+
+print total
