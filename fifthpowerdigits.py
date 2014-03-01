@@ -16,13 +16,8 @@ for i in range (2, 531441):
   digsum = 0
   for k in range(0, len(curr)):
       digsum = digsum + pow(int(curr[k]),5)
- 
   if i==digsum:
-    print i, digsum
     succ.append(digsum)
-
-print succ 
-
 for j in range (0, len(succ)):
   total = total + succ[j]
 
