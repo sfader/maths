@@ -1,20 +1,24 @@
 # sum of fifth power digits
 
 
-# five digit numers 10000 >= x <= 99999
+# any number that can be written as the sum of its digits to the 5th power
 
-# for loop through numbers with five digits, hold current number, make a list of current number digits, raise each digit to the 5th power, test equivalence
+# for loop through numbers, hold current number, make a list of current number digits, raise each digit to the 5th power, test equivalence
 # make a list of successes 
 
 succ = []
 curr =0
 total = 0
 
-for i in range (10000, 99999):
+
+for i in range (2, 531441):
   curr = str(i)
-  digsum = pow(int(curr[0]),5) + pow(int(curr[1]),5) + pow(int(curr[2]),5) + pow(int(curr[3]),5) + pow(int(curr[4]),5)
-  #print i, digsum
+  digsum = 0
+  for k in range(0, len(curr)):
+      digsum = digsum + pow(int(curr[k]),5)
+ 
   if i==digsum:
+    print i, digsum
     succ.append(digsum)
 
 print succ 
